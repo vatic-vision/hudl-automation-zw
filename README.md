@@ -80,7 +80,6 @@ From the root of the project, run
 ```bash
 behave
 ```
-Example: update the step **"Then I am directed to the "/home" page"** changing "/home" in **Scenario: User can log in** to some other path, then run tests. The first test will fail and you will see a screenshot and error output in your terminal
 
 ### Individual Test Execution with Behave
 If you would like to run just one, or a specified selection of tests, you can add a @tag directly above the scenario name in a feature file. When writing tests, I use @now to mark tests that I want to run. You can then run only tagged tests by running:
@@ -90,7 +89,9 @@ behave -k -t "@now"
 Change @now to whatever you've set for your tag if you've changed it
 
 #### Behave Failures and Evidence
-If a failure occurs, a screenshot folder will be created and a screenshot with the failing scenario name will be added. If you wold like to easily force a failure, you can change one of the step parameters in hudl-automation-zw/features/login_page.feature User can log in
+If a failure occurs, a screenshot folder will be created and a screenshot with the failing scenario name will be added. If you wold like to easily force a failure, you can change one of the step parameters in hudl-automation-zw/features/login_page.feature User can log in.
+
+Example: update the step **"Then I am directed to the "/home" page"** changing "/home" in **Scenario: User can log in** to some other path, then run tests. The first test will fail and you will see a screenshot and error output in your terminal
 
 ### Parallel Execution
 Using behavex, we can easily run multiple scenarios in our feature files in parallel by running:
