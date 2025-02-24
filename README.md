@@ -89,7 +89,7 @@ behave -k -t "@now"
 Change @now to whatever you've set for your tag if you've changed it
 
 #### Behave Failures and Evidence
-If a failure occurs, a screenshot folder will be created and a screenshot with the failing scenario name will be added. If you wold like to easily force a failure, you can change one of the step parameters in hudl-automation-zw/features/login_page.feature User can log in.
+If a failure occurs, a screenshot folder will be created and a screenshot with the failing scenario name will be added. If you wold like to easily force a failure, you can change one of the step parameters in hudl-automation-zw/features/login_page.feature.
 
 Example: update the step **"Then I am directed to the "/home" page"** changing "/home" in **Scenario: User can log in** to some other path, then run tests. The first test will fail and you will see a screenshot and error output in your terminal
 
