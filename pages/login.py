@@ -2,8 +2,8 @@ from pages.page import Page
 
 
 class LoginPage(Page):
-    USERNAME_INPUT = "[id='username']"
-    PASSWORD_INPUT = "[id='password']"
+    INPUT_USERNAME = "[id='username']"
+    INPUT_PASSWORD = "[id='password']"
     TEXT_PASSWORD_ERROR = "[id='error-element-password']"
     TEXT_USERNAME_ERROR = "[id='error-element-username']"
     BTN_CONTINUE = "[name='action']"
@@ -14,10 +14,10 @@ class LoginPage(Page):
         super().__init__(self.driver)
 
     def enter_username(self, username):
-        Page.enter_text(self, self.USERNAME_INPUT, username)
+        Page.enter_text(self, self.INPUT_USERNAME, username)
 
     def enter_password(self, password):
-        Page.enter_text(self, self.PASSWORD_INPUT, password)
+        Page.enter_text(self, self.INPUT_PASSWORD, password)
 
     def click_continue(self):
         Page.click_element(self, self.BTN_CONTINUE)

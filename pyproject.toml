@@ -1,5 +1,5 @@
 [tool.poetry]
-name = "hudl-automation"
+name = "hudl-automation-zw"
 version = "0.1.0"
 description = "Automation Project for Hudl"
 authors = ["Zachary White"]

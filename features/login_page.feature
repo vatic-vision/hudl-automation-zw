@@ -1,6 +1,6 @@
 Feature: Login Page
     - Tests for Hudl login page
-    
+    @now
     Scenario: User can log in
         When I enter my username
         And I click continue

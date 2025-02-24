@@ -1,4 +1,4 @@
-from behave import *
+from behave import step
 from pages.page import Page
 
 
