@@ -1,0 +1,19 @@
+[tool.poetry]
+name = "hudl-automation"
+version = "0.1.0"
+description = "Automation Project for Hudl"
+authors = ["Zachary White"]
+readme = "README.md"
+packages = []
+
+[tool.poetry.dependencies]
+python = "^3.11"
+
+[tool.poetry.dev-dependencies]
+behave = "^1.2.6"
+behavex = "^4.1.0"
+selenium = "^4.29.0"
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
